@@ -1,0 +1,41 @@
+***Designing of Netflix clone using tmdb api for data***
+
+====>
+folders
+ 1> frontend
+ 2> backend
+ 3> environment variables
+ 4> package.json (which contains all the dependencies)
+
+
+
+=> we will first design backend services
+
+1>  ->Controllers 
+        -> Contains the business logic of our api end points
+
+            files=>                   
+                user.controller.js
+                movies.controller.js
+
+
+    ->Models
+        -> Contains the schema of our database tables
+            files=>
+                user.model.js
+                movies.model.js
+
+    ->Routes
+        -> Contains the api end points of our application
+            files=>
+                user.route.js
+
+    ->utils
+        -> contains utility functions for our server
+            files=>
+                db.js (Connection for database)
+                envVars.js (environment variable in javascrpit files to access anywhere)
+                generateTokenAndCookies.js (for generating tokens and setting cookies through hhtp response)
+
+    ->server.js (entry point of our server)
+        
