@@ -1,7 +1,7 @@
 import { user } from "../models/user.model.js";
 import bcrypt from "bcryptjs";
 import { generateTokeAndSetCookie } from "../utils/generateTokenAndCookie.js";
-import { owner } from "../../owner.js";
+import { owner } from "../owner.js";
 
 export const signup = async (req, res) => {
   // console.log("Request object : ", req);
