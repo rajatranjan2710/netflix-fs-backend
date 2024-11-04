@@ -16,7 +16,7 @@ app.use(
 );
 app.use(
   cors({
-    origin: "https://netflix-fs-frontend.vercel.app/",
+    origin: "https://netflix-fs-frontend.vercel.app",
     methods: ["GET", "POST", "DELETE", "PUT"],
     credentials: true,
   })

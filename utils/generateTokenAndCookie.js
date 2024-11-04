@@ -6,12 +6,12 @@ export const generateTokeAndSetCookie = async (userId, res) => {
   const Token = jwt.sign({ userId }, ENV_VARS.JWT_SECRET);
 
   console.log("cookie generated");
-  console.log(typeof ENV_VARS.NODE_ENV);
+  // console.log(typeof ENV_VARS.NODE_ENV);
   res.cookie("jwt-netflix", Token, {
     httpOnly: true,
     maxAge: 15 * 24 * 60 * 60 * 1000, // 15 days in miliseconds
-    // sameSite: "none",
-    secure: ENV_VARS.NODE_ENV === "production",
+    sameSite: "None",
+    secure: true,
   });
   console.log("cookie delieverd");
 };
